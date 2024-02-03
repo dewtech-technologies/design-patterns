@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/application/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/application/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/application/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/composer" />
@@ -120,6 +122,11 @@
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/darkaonline/l5-swagger" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/swagger-api/swagger-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/zircote/swagger-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

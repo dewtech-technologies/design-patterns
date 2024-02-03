@@ -124,6 +124,11 @@
       <path value="$PROJECT_DIR$/application/vendor/composer" />
       <path value="$PROJECT_DIR$/application/vendor/spatie/backtrace" />
       <path value="$PROJECT_DIR$/application/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/application/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/application/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/application/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/application/vendor/darkaonline/l5-swagger" />
+      <path value="$PROJECT_DIR$/application/vendor/zircote/swagger-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

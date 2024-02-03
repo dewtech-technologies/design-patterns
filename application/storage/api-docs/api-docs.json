@@ -1,0 +1,73 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documentação API Dewtech",
+        "description": "API didática para exemplificar implementações de padrão de projetos",
+        "contact": {
+            "name": "Dewtech",
+            "url": "https://www.dewtech.io",
+            "email": "wanderson@dewtech.io"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/v1/dewtech/pagar": {
+            "post": {
+                "tags": [
+                    "Strategy"
+                ],
+                "summary": "Executa um pagamento",
+                "description": "Executa um pagamento com o método especificado",
+                "operationId": "pagar",
+                "requestBody": {
+                    "description": "Informações do método de pagamento",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "metodo_pagamento"
+                                ],
+                                "properties": {
+                                    "metodo_pagamento": {
+                                        "type": "string",
+                                        "example": "cartao"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Resultado do pagamento",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "resultado": {
+                                            "type": "string",
+                                            "example": "sucesso"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Dados inválidos"
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor"
+                    }
+                }
+            }
+        }
+    }
+}
