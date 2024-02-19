@@ -17,7 +17,7 @@ class PagamentoController extends Controller
 
     /**
      * @OA\Post(
-     *     path="/v1/dewtech/pagar",
+     *     path="/api/v1/dewtech/pagar",
      *     tags={"Strategy"},
      *     summary="Executa um pagamento",
      *     description="Executa um pagamento com o método especificado",
