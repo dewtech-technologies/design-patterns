@@ -4,3 +4,4 @@
 
 #### 1) Branch strategy contém implementações do padrão Strategy
 #### 2) Branch templateMethod contém implementações do padrão Template Method
+#### 3) Branch observers contém implementações do padrão Observer
