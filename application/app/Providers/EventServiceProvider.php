@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Events\PedidoConcluidoEvent;
+use App\Observers\AtualizarEstoqueObserver;
+use App\Observers\EnviarEmailObserver;
+use App\Observers\RegistrarTransacaoObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -17,6 +21,11 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
+        ],
+        PedidoConcluidoEvent::class=>[
+            EnviarEmailObserver::class,
+            AtualizarEstoqueObserver::class,
+            RegistrarTransacaoObserver::class
         ],
     ];
 
