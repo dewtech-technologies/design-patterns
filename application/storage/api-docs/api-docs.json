@@ -152,6 +152,49 @@
                     }
                 }
             }
+        },
+        "/api/v1/dewtech/pedido/concluir/{pedidoId}": {
+            "post": {
+                "tags": [
+                    "Observer"
+                ],
+                "summary": "Concluir um pedido",
+                "description": "Conclui um pedido e notifica os observadores.",
+                "operationId": "concluirPedido",
+                "parameters": [
+                    {
+                        "name": "pedidoId",
+                        "in": "path",
+                        "description": "ID do Pedido",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pedido concluído com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Pedido concluído e observadores notificados"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Pedido não encontrado"
+                    }
+                }
+            }
         }
     }
 }
